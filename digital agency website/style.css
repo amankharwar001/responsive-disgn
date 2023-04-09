@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-txt{
+    font-size: 65px;
+}
+p{
+    font-size: 18px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size:25px;
+}
+
+button {
+    background-color: #a19de2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+.container-wrap{
+    max-width: 1080px;
+    margin-inline: auto;
+    align-items: center;
+}
+nav{
+    color: white;
+    height: 60px;
+    line-height: 60px;
+}
+.nav-bar-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fore-ground{
+    background-color: #8c88d6;
+    width: 100%;
+    height: 650px;
+}
+header{
+    color: white;
+    margin-top: 100px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 500px; */
+}
+.image-foreground img{
+    /* background-color: red; */
+    width: 400px;
+    /* height: 20px; */
+    margin-left: 200px;
+}
+
+/* card design */
+
+.card-template{
+    display: flex;
+    margin: 80px;
+   
+}
+
+.card-template-content{
+    /* border: 2px solid black; */
+    /* background: red; */
+    padding: 20px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.card-template-2{
+    margin: 0 20px;
+    background-color: #8c88d6;
+    /* border: 2px solid black; */
+    color: white;
+    border-radius: 10px;
+}
+
+/* agency goal */
+
+.card-goal-background{
+    background-color: #e7e6f3;
+    height: 500px;
+}
+
+.card-goal{
+    padding: 50px 0 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-img img{
+    width: 400px;
+}
+.goal-content{
+    margin-left: 100px;
+    width: 500px;
+}
+
+/* our portfolio */
+
+.portfolio-template{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.porfolio-navbar{
+    margin-top: 30px;
+}
+.porfolio-navbar a{
+
+    text-decoration: none;
+    margin: 40px 50px;
+    color: black;
+    /* justify-content: space-between; */
+}
+.portfolio-card-img{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item{
+  padding: 20px;
+ 
+  
+}
+.grid-item img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+ /* ----------------Experience----------  */
+.experience-template{
+    background-color:  #e7e6f3;
+    display: flex;
+    padding: 50px 0px;
+    margin-top: 50px
+}
+.experience-content h2{
+    font-size: 45px;
+}
+.experience-content p{
+    margin: 20px 0;
+}
+.heading-blue h2{
+    color: #8c88d6;
+}
+
+.experience-video video{
+    margin-left:20px ;
+    border-radius:20px
+}
+
+/* overview */
+.overview-template{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.overview-img img{
+    width: 450px;
+    margin-right: 60px;
+}
+
+.overview-content p{
+    margin: 20px 0;
+}
+.tick{
+    color: #8c88d6;
+    font-weight: bolder;
+}
+.marketing-topics{
+    display: flex;
+    justify-content: space-between;
+}
+.overview-content ul li{
+    list-style: none;
+    margin: 10px;
+}
+/* testimonial templates */
+.testimonial-template{
+    margin-top:60px ;
+}
+.testimonial-cards{
+    display: flex;
+}
+.single-testimonial-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.single-testimonial-card img{
+    width: 300px;
+    height: 350px;
+    object-position: top;
+    object-fit:cover ;
+    margin: 50px ;
+}
+.testimonial-template{
+    display: flex;
+    flex-direction: Column;
+}
+
+/* company names */
+.partner-company-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    
+}
+.partner-company-logo img{
+    width: 120px;
+    align-items: center;
+}
+
+/* footer */
+.footer-navbar{
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.social-logo i{
+    font-size: 20px;
+    margin: 8px;
+}
+
+
+/* mobile responsive */
+@media only screen and (max-width:768px){
+    .container-wrap{
+        width: 700px;
+    }
+    .content-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-txt{
+        text-align: center;
+    }
+    .content-header p{
+        text-align: center;
+    }
+    .fore-ground{
+        width:100%;
+        height: auto;
+    }
+    header{
+    display: block;
+    } 
+
+    /* card */
+    .card-template {
+        display: block;
+    }
+    /* card-goal backgound */
+    .card-goal-background{
+        height: 100%;
+    }
+    
+    .card-goal{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* our portfolio */
+    .porfolio-navbar a{
+        margin: 10px;
+    }
+    .portfolio-card-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mobile-experience-template {
+        flex-direction: column;
+    }
+    .experience-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .experience-content p{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .experience-info{
+        display: flex;
+        justify-content:center;
+    }
+    /* margeting goal */
+    .overview-template{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .overview-template{
+        text-align: center;
+    }
+    /* testimonial template */
+    .testimonial-template p{
+        padding: 0 20px;
+    }
+    .testimonial-cards{
+        display: block;
+    }
+}
